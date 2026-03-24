@@ -1,0 +1,113 @@
+#impulse-guard-modal {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 2147483647; /* Max z-index */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#impulse-guard-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+#impulse-guard-content h2 { 
+  margin-top: 0; 
+  color: #111827; 
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+#impulse-guard-content p { 
+  font-size: 16px; 
+  color: #4b5563; 
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+#impulse-guard-content strong {
+  color: #111827;
+}
+#ig-api-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  font-style: italic;
+  font-size: 14px !important;
+}
+#ig-ai-analysis {
+  margin-top: 15px;
+  text-align: left;
+}
+#ig-pros-cons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: left;
+}
+.ig-pros, .ig-cons {
+  flex: 1;
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+.ig-pros strong {
+  color: #059669 !important;
+  display: block;
+  margin-bottom: 5px;
+}
+.ig-cons strong {
+  color: #dc2626 !important;
+  display: block;
+  margin-bottom: 5px;
+}
+#ig-pros-list, #ig-cons-list {
+  margin: 0;
+  padding-left: 15px;
+  color: #4b5563;
+}
+#ig-pros-list li, #ig-cons-list li {
+  margin-bottom: 4px;
+}
+#impulse-guard-actions { 
+  margin-top: 25px; 
+  display: flex; 
+  gap: 12px; 
+  justify-content: center; 
+}
+.ig-btn { 
+  padding: 12px 20px; 
+  border: none; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-size: 14px; 
+  font-weight: 600;
+  transition: background 0.2s;
+  flex: 1;
+}
+.ig-btn-cancel { 
+  background: #ef4444; 
+  color: white; 
+}
+.ig-btn-cancel:hover {
+  background: #dc2626;
+}
+.ig-btn-continue { 
+  background: #10b981; 
+  color: white; 
+}
+.ig-btn-continue:hover:not(:disabled) {
+  background: #059669;
+}
+.ig-btn-continue:disabled { 
+  background: #d1d5db; 
+  color: #6b7280;
+  cursor: not-allowed; 
+}
